@@ -1,4 +1,4 @@
-package com.liu0001.Merge_Two_Sorted_Lists_21;
+package com.liu0001.Valid_Parentheses_20;
 
 /*
 20. Valid Parentheses from Leetcode.

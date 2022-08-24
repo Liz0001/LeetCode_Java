@@ -17,7 +17,4 @@ public class Solution {
         }
         return result;
     }
-    public int returnNumTimes2(int num) {
-        return num * 2;
-    }
 }
