@@ -6,15 +6,19 @@ public class Solution {
     public int getDecimalValue(ListNode head) {
         int num = head.val;
         int val = 0;
+        int nr;
+
         if (head.next != null) {
             val = getDecimalValue(head.next);
         }
-
-        index  = index*2;
-        if (num == 0) {
-            return val;
+        if (head.next == null) index = 1;
+        if (index == 1) {
+            nr = head.val;
+        } else {
+            nr = val + num*index;
         }
+        index = index + index;
 
-        return (index + head.val);
+        return nr;
     }
 }

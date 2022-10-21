@@ -17,17 +17,30 @@ public class Main {
 
         Solution solution = new Solution();
         ListNode listNode1 = new ListNode(1);
-        ListNode listNode2 = new ListNode(1);
-        ListNode listNode3 = new ListNode(0);
+        ListNode listNode2 = new ListNode(0);
+        ListNode listNode3 = new ListNode(1);
         ListNode listNode4 = new ListNode(1);
+        ListNode listNode5 = new ListNode(0);
 
 
         listNode1.next = listNode2;
         listNode2.next = listNode3;
-        listNode3.next = listNode4;
+//        listNode3.next = listNode4;
+//        listNode4.next = listNode5;
 
-        int ans = solution.getDecimalValue(listNode1);
-        System.out.println("\nAnswer: "+ans);
+
+        ListNode node1 = new ListNode(0);
+        ListNode node2 = new ListNode(1);
+
+
+        int ans1 = solution.getDecimalValue(listNode1);
+        System.out.println("\nAnswer: "+ans1);
+
+        int ans2 = solution.getDecimalValue(node1);
+        System.out.println("\nAnswer: "+ans2);
+
+        int ans3 = solution.getDecimalValue(node2);
+        System.out.println("\nAnswer: "+ans3);
 
     }
 }
