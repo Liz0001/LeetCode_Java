@@ -25,6 +25,13 @@ public class Main {
 class Solution {
     public boolean checkIfPangram(String sentence) {
 
-        return (sentence.chars().distinct().count() >= 26);
+        for (int i = 97; i < 123; i++) {
+//            ((char) i) + ""
+            if (!sentence.contains(((char) i) + "")) {
+                return false;
+            }
+        }
+        return true;
+//      return (sentence.chars().distinct().count() >= 26);
     }
 }
