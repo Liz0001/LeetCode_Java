@@ -1,4 +1,4 @@
-
+out/*
 target
 bin
 .settings
@@ -7,6 +7,8 @@ bin
 *.class
 mvnw
 mvnw*
+out/production/LeetCode/com/liu0001/*
+
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
